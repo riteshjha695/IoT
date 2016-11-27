@@ -69,8 +69,8 @@ void loop() {
     if (request.indexOf("/ROBOT=FORWARD") != -1) { //checks if you clicked FORWARD
         digitalWrite(D5, HIGH);
       digitalWrite(D6, LOW);
-      digitalWrite(D7, LOW);
-      digitalWrite(D8, HIGH);
+      digitalWrite(D7, HIGH);
+      digitalWrite(D8, LOW);
       //Serial.println("You clicked FORWARD");
     }
   
@@ -78,8 +78,8 @@ void loop() {
   if (request.indexOf("/ROBOT=BACKWARD") != -1) { //checks if you clicked BACKWARD
        digitalWrite(D5, LOW);
       digitalWrite(D6, HIGH);
-      digitalWrite(D7, HIGH);
-      digitalWrite(D8, LOW);
+      digitalWrite(D7, LOW);
+      digitalWrite(D8, HIGH);
   
      // Serial.println("You clicked BACKWARD");
      
@@ -89,8 +89,8 @@ void loop() {
     if (request.indexOf("/ROBOT=LEFT") != -1) { //checks if you clicked LEFT
        digitalWrite(D5, LOW);
       digitalWrite(D6, LOW);
-      digitalWrite(D7, LOW);
-      digitalWrite(D8, HIGH);
+      digitalWrite(D7, HIGH);
+      digitalWrite(D8, LOW);
       //Serial.println("You clicked LEFT");
       }
 
